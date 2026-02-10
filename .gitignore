@@ -1,0 +1,26 @@
+# Sensitive configuration
+mission-control.json
+config.json
+secrets/
+*.key
+*.pem
+*.env
+
+# Private data
+data/.tasks-snapshot.json
+data/.webhook-debug.log
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Editor directories
+.vscode/
+.idea/
+
+# Node modules (if any)
+node_modules/

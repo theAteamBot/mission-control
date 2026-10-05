@@ -1,0 +1,198 @@
+{
+  "comfy_url": "http://127.0.0.1:8188",
+  "project_root": "C:/AI/ColdStorage",
+  "takes": 4,
+  "_render_note": "Render 736 x 1280 (LTX needs multiples of 32), 24 fps, single stage. assemble center-crops to the 720 x 1280 master. SeedVR2 upscale to 1080 x 1920 runs only after every episode is finished (upscale_width/height).",
+  "width": 736,
+  "height": 1280,
+  "final_width": 720,
+  "final_height": 1280,
+  "upscale_width": 1080,
+  "upscale_height": 1920,
+  "chain_tail_trim": 6,
+  "continuation_overrides": {
+    "img_strength": 1.0,
+    "img_compression": 0
+  },
+  "music_db": -16,
+  "sfx_db": -3,
+  "pipeline_order": [
+    "i2v_25",
+    "flf_25",
+    "idlora_23"
+  ],
+  "pipelines": {
+    "i2v_25": {
+      "about": "LTX-2.5 image to video. ComfyUI template: LTX-2.5 Image to Video. Export (API) and save here.",
+      "template": "workflows/ltx25_i2v_api.json",
+      "slots": {
+        "positive": [
+          "NODE_ID",
+          "text"
+        ],
+        "negative": [
+          "NODE_ID",
+          "text"
+        ],
+        "start_image": [
+          "NODE_ID",
+          "image"
+        ],
+        "seed": [
+          [
+            "NODE_ID",
+            "noise_seed"
+          ]
+        ],
+        "frames": [
+          "NODE_ID",
+          "length"
+        ],
+        "width": [
+          "NODE_ID",
+          "width"
+        ],
+        "height": [
+          "NODE_ID",
+          "height"
+        ],
+        "fps": [
+          "NODE_ID",
+          "frame_rate"
+        ],
+        "filename_prefix": [
+          "NODE_ID",
+          "filename_prefix"
+        ],
+        "img_strength": [
+          "NODE_ID",
+          "strength"
+        ],
+        "img_compression": [
+          "NODE_ID",
+          "img_compression"
+        ]
+      }
+    },
+    "flf_25": {
+      "about": "LTX-2.5 first last frame. ComfyUI template: LTX-2.5 First-Last-Frame.",
+      "template": "workflows/ltx25_flf_api.json",
+      "slots": {
+        "positive": [
+          "NODE_ID",
+          "text"
+        ],
+        "negative": [
+          "NODE_ID",
+          "text"
+        ],
+        "start_image": [
+          "NODE_ID",
+          "image"
+        ],
+        "end_image": [
+          "NODE_ID",
+          "image"
+        ],
+        "seed": [
+          [
+            "NODE_ID",
+            "noise_seed"
+          ]
+        ],
+        "frames": [
+          "NODE_ID",
+          "length"
+        ],
+        "width": [
+          "NODE_ID",
+          "width"
+        ],
+        "height": [
+          "NODE_ID",
+          "height"
+        ],
+        "fps": [
+          "NODE_ID",
+          "frame_rate"
+        ],
+        "filename_prefix": [
+          "NODE_ID",
+          "filename_prefix"
+        ],
+        "img_strength": [
+          "NODE_ID",
+          "strength"
+        ],
+        "img_compression": [
+          "NODE_ID",
+          "img_compression"
+        ]
+      }
+    },
+    "idlora_23": {
+      "about": "LTX-2.3 ID-LoRA dialogue, the W4 / C02 method (DIALOGUE_RECIPE_W4.md): the graph embedded in the approved C02_take3.mp4. ltx-2.3-22b-distilled-1.1 Q6_K GGUF, id-lora-talkvid-3k at 1.0, LTXVReferenceAudio identity 3.0, ImgToVideoInplace 0.7, img_compression 18, CFGGuider cfg 1.0, euler, 8 manual sigmas, trim_to_audio False. The voice is generated inside the render from the character's reference WAV. Never feed a line WAV.",
+      "template": "workflows/ltx23_idlora_api.json",
+      "slots": {
+        "positive": [
+          "NODE_ID",
+          "text"
+        ],
+        "negative": [
+          "NODE_ID",
+          "text"
+        ],
+        "start_image": [
+          "NODE_ID",
+          "image"
+        ],
+        "face_ref": [
+          "NODE_ID",
+          "image"
+        ],
+        "voice_ref": [
+          "NODE_ID",
+          "audio"
+        ],
+        "seed": [
+          [
+            "NODE_ID",
+            "noise_seed"
+          ],
+          [
+            "NODE_ID",
+            "noise_seed"
+          ]
+        ],
+        "frames": [
+          "NODE_ID",
+          "length"
+        ],
+        "width": [
+          "NODE_ID",
+          "width"
+        ],
+        "height": [
+          "NODE_ID",
+          "height"
+        ],
+        "fps": [
+          "NODE_ID",
+          "frame_rate"
+        ],
+        "filename_prefix": [
+          "NODE_ID",
+          "filename_prefix"
+        ],
+        "img_strength": [
+          "NODE_ID",
+          "strength"
+        ],
+        "img_compression": [
+          "NODE_ID",
+          "img_compression"
+        ]
+      }
+    }
+  }
+}

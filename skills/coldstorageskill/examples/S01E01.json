@@ -1,0 +1,665 @@
+{
+  "series": "COLD STORAGE",
+  "episode": "S01E01",
+  "title": "IPO Night",
+  "fps": 24,
+  "runtime_target_s": 90,
+  "hook": {
+    "type": "status_violation",
+    "first_beat_s": 0.4,
+    "caption": "SHE DOESN'T KNOW I'M WORTH $5 BILLION",
+    "why": "A billionaire is humiliated by a woman who thinks he's a valet. Status violation plus a secret identity in the first frame."
+  },
+  "music_bed": "music/S01E01_score.wav",
+  "music_cues": [
+    {
+      "id": "M1",
+      "from_shot": "C01",
+      "seconds": 18.2,
+      "prompt": "tense cinematic film score, solo cello drone, low strings, sparse and dark, 70 bpm, no drums, no vocals",
+      "file": "music/S01E01_M1.wav"
+    },
+    {
+      "id": "M2",
+      "from_shot": "T1",
+      "seconds": 30.4,
+      "prompt": "warm cinematic uplift, piano and strings, hopeful and romantic, 96 bpm, light pulse, no vocals",
+      "file": "music/S01E01_M2.wav"
+    },
+    {
+      "id": "M3",
+      "from_shot": "C09",
+      "seconds": 10.1,
+      "prompt": "quiet intimate romantic piano, nervous, slowly thinning to nothing, no vocals",
+      "file": "music/S01E01_M3.wav"
+    },
+    {
+      "id": "M4",
+      "from_shot": "C12",
+      "seconds": 24.2,
+      "prompt": "SILENCE: generate nothing, pad with digital silence",
+      "file": "music/S01E01_M4.wav"
+    },
+    {
+      "id": "M5",
+      "from_shot": "C16",
+      "seconds": 7.0,
+      "prompt": "one low piano note into a cold dark 4 note motif, cinematic, ends clean",
+      "file": "music/S01E01_M5.wav"
+    }
+  ],
+  "sfx_bed": "sfx/S01E01_sfx.wav",
+  "sfx_library": {
+    "sfx/champagne_pour.wav": {
+      "seconds": 3,
+      "prompt": "champagne pouring and splashing onto a man's hair and suit collar, close microphone, real liquid, crisp fizz, no music"
+    },
+    "sfx/crowd_gasp_laugh.wav": {
+      "seconds": 5,
+      "prompt": "upscale gala crowd gasps then breaks into cruel laughter, black tie ballroom, large room ambience, no music"
+    },
+    "sfx/phone_shutters.wav": {
+      "seconds": 3,
+      "prompt": "several smartphone camera shutter clicks, crowd murmur underneath, no music"
+    },
+    "sfx/single_drip.wav": {
+      "seconds": 1,
+      "prompt": "a single drop of liquid hitting a marble floor, close, quiet room"
+    },
+    "sfx/whoosh_rise.wav": {
+      "seconds": 2,
+      "prompt": "cinematic rising whoosh with a shimmering sparkle tail, airy, trailer quality"
+    },
+    "sfx/confetti_cannon.wav": {
+      "seconds": 2,
+      "prompt": "confetti cannon pop with paper confetti fluttering down, big party"
+    },
+    "sfx/party_crowd.wav": {
+      "seconds": 8,
+      "prompt": "glamorous skyscraper party crowd cheering and clinking champagne glasses, muffled dance beat in the distance"
+    },
+    "sfx/bottle_lift.wav": {
+      "seconds": 2,
+      "prompt": "a chilled champagne bottle lifted off a silver tray, two glass flutes clinking, close, party murmur behind"
+    },
+    "sfx/hotel_lobby.wav": {
+      "seconds": 8,
+      "prompt": "quiet luxury hotel lobby room tone, distant grand piano, soft footsteps on marble"
+    },
+    "sfx/elevator_ding.wav": {
+      "seconds": 2,
+      "prompt": "classic brass hotel elevator arrival ding"
+    },
+    "sfx/elevator_doors.wav": {
+      "seconds": 3,
+      "prompt": "heavy elevator doors sliding closed with a soft thud"
+    },
+    "sfx/carpet_steps.wav": {
+      "seconds": 7,
+      "prompt": "slow footsteps on thick hotel corridor carpet, low building hum"
+    },
+    "sfx/muffled_laughter.wav": {
+      "seconds": 4,
+      "prompt": "a man and a woman laughing intimately behind a closed hotel door, muffled"
+    },
+    "sfx/door_open.wav": {
+      "seconds": 2,
+      "prompt": "heavy hotel suite door handle turning and the door swinging open"
+    },
+    "sfx/heartbeat_low.wav": {
+      "seconds": 4,
+      "prompt": "a single slow deep heartbeat, cinematic sub bass"
+    },
+    "sfx/city_far.wav": {
+      "seconds": 8,
+      "prompt": "Manhattan at night heard from a high floor through glass, distant traffic, a faint siren"
+    },
+    "sfx/silk_rustle.wav": {
+      "seconds": 2,
+      "prompt": "a silk robe rustling as someone sits up on a bed"
+    },
+    "sfx/sub_hit.wav": {
+      "seconds": 2,
+      "prompt": "cinematic sub bass impact hit with a short dark tail, trailer style"
+    },
+    "sfx/pen_scratch.wav": {
+      "seconds": 3,
+      "prompt": "a fountain pen signing heavy paper, close microphone, scratch of the nib"
+    },
+    "sfx/clock_tick.wav": {
+      "seconds": 3,
+      "prompt": "an antique clock ticking in a quiet office"
+    },
+    "sfx/bottle_drop.wav": {
+      "seconds": 2,
+      "prompt": "a heavy champagne bottle dropping onto thick hotel carpet, a dull thud, then fizzing and glugging as it rolls and spills, close microphone, no music"
+    }
+  },
+  "sfx_cues": [
+    {
+      "shot": "C01",
+      "at": 0.3,
+      "file": "sfx/champagne_pour.wav",
+      "db": -4
+    },
+    {
+      "shot": "C01",
+      "at": 1.2,
+      "file": "sfx/crowd_gasp_laugh.wav",
+      "db": -8
+    },
+    {
+      "shot": "C01",
+      "at": 1.5,
+      "file": "sfx/phone_shutters.wav",
+      "db": -10
+    },
+    {
+      "shot": "C03B",
+      "at": 1.0,
+      "file": "sfx/single_drip.wav",
+      "db": -6
+    },
+    {
+      "shot": "T1",
+      "at": 0.0,
+      "file": "sfx/whoosh_rise.wav",
+      "db": -4
+    },
+    {
+      "shot": "T1",
+      "at": 3.0,
+      "file": "sfx/party_crowd.wav",
+      "db": -14
+    },
+    {
+      "shot": "T1",
+      "at": 3.4,
+      "file": "sfx/confetti_cannon.wav",
+      "db": -8
+    },
+    {
+      "shot": "C06X",
+      "at": 0.2,
+      "file": "sfx/bottle_lift.wav",
+      "db": -8
+    },
+    {
+      "shot": "C08A",
+      "at": 0.0,
+      "file": "sfx/hotel_lobby.wav",
+      "db": -16
+    },
+    {
+      "shot": "C08BX",
+      "at": 1.2,
+      "file": "sfx/elevator_ding.wav",
+      "db": -6
+    },
+    {
+      "shot": "C09",
+      "at": 1.5,
+      "file": "sfx/elevator_doors.wav",
+      "db": -6
+    },
+    {
+      "shot": "C10",
+      "at": 0.0,
+      "file": "sfx/carpet_steps.wav",
+      "db": -10
+    },
+    {
+      "shot": "C12",
+      "at": 0.0,
+      "file": "sfx/muffled_laughter.wav",
+      "db": -10
+    },
+    {
+      "shot": "C12",
+      "at": 2.2,
+      "file": "sfx/door_open.wav",
+      "db": -6
+    },
+    {
+      "shot": "C12",
+      "at": 3.6,
+      "file": "sfx/heartbeat_low.wav",
+      "db": -4
+    },
+    {
+      "shot": "C13",
+      "at": 0.0,
+      "file": "sfx/city_far.wav",
+      "db": -16
+    },
+    {
+      "shot": "C13",
+      "at": 0.5,
+      "file": "sfx/silk_rustle.wav",
+      "db": -12
+    },
+    {
+      "shot": "C14",
+      "at": 1.4,
+      "file": "sfx/bottle_drop.wav",
+      "db": -4
+    },
+    {
+      "shot": "C15",
+      "at": 5.0,
+      "file": "sfx/city_far.wav",
+      "db": -18
+    },
+    {
+      "shot": "C15",
+      "at": 6.6,
+      "file": "sfx/sub_hit.wav",
+      "db": -2
+    },
+    {
+      "shot": "C16",
+      "at": 0.0,
+      "file": "sfx/pen_scratch.wav",
+      "db": -6
+    },
+    {
+      "shot": "C16",
+      "at": 0.0,
+      "file": "sfx/clock_tick.wav",
+      "db": -14
+    }
+  ],
+  "end_card": "images/CARD-ENDCARD.png",
+  "end_card_s": 2.0,
+  "characters": {
+    "COLE_FOUNDER": {
+      "face_ref": "images/CAST-COLE-03.png",
+      "voice_ref": "voices/COLE.wav",
+      "identity": "a 29 year old American man, 6'2\", athletic, chiseled jaw, warm hazel eyes, dark brown tousled hair, light natural stubble, white open collar shirt, tailored navy blazer"
+    },
+    "COLE_VALET": {
+      "face_ref": "images/CAST-COLE-05.png",
+      "voice_ref": "voices/COLE.wav",
+      "identity": "the same man at 32, dark brown hair cropped short, heavier stubble, guarded hazel eyes, red valet vest over a white shirt, black bow tie"
+    },
+    "VIVIAN": {
+      "face_ref": "images/CAST-VIVIAN-03.png",
+      "voice_ref": "voices/VIVIAN.wav",
+      "identity": "a 28 year old American woman, platinum blonde soft Hollywood waves, icy blue eyes, sculpted cheekbones, classic red lip"
+    },
+    "GRANT": {
+      "face_ref": "images/CAST-GRANT-03.png",
+      "voice_ref": "voices/GRANT.wav",
+      "identity": "a 30 year old American man, golden blond swept hair, bright blue eyes, white smile, tan, chiseled jaw"
+    },
+    "CONCIERGE": {
+      "face_ref": "images/CAST-CONCIERGE-01.png",
+      "voice_ref": "voices/CONCIERGE.wav",
+      "identity": "a pretty 30 year old American woman, dark hair in a neat low bun, warm brown eyes, charcoal hotel uniform blazer, pearl studs"
+    }
+  },
+  "shots": [
+    {
+      "id": "C01",
+      "pipeline": "i2v_25",
+      "seed_group": "S1",
+      "frames": 145,
+      "start_image": "images/E01-K01.png",
+      "cast": [
+        "VIVIAN",
+        "COLE_VALET"
+      ],
+      "shot": "medium close up",
+      "visual": "A black tie gala ballroom under crystal chandeliers. A woman's hand in a silver sequined sleeve tilts a champagne flute over the head of a handsome valet in a red vest. Champagne pours over his hair and runs down his face and collar. He does not move or look away. His eyes stay calm, looking straight ahead. Behind him, soft and out of focus, guests laugh and hold up phones seen only from the back. Slow push in toward his face.",
+      "light": "warm chandelier top light, gold rim on his wet hair, cool bounce from the room at the frame edges",
+      "sounds": "champagne splashing on hair, a sharp gasp from the crowd, laughter building, phone camera shutter clicks, gala murmur, a string quartet stopping mid note",
+      "out": "cut on the splash sound into C02",
+      "lens": 50,
+      "angle": "eye level"
+    },
+    {
+      "id": "C02",
+      "pipeline": "idlora_23",
+      "seed_group": "S1",
+      "frames": 97,
+      "start_image": "images/E01-K02.png",
+      "cast": [
+        "VIVIAN"
+      ],
+      "speaker": "VIVIAN",
+      "shot": "close up, three-quarter",
+      "line": "Oops. Tip's included.",
+      "visual": "Close up of a glamorous platinum blonde woman in a silver sequined gown holding an empty champagne flute at a black tie gala, three-quarter toward camera, looking down at someone just off camera.",
+      "light": "warm key from camera left, diamonds catching light, chandelier bokeh behind",
+      "sounds": "bright, sweet, mocking upper-class voice, close and clear, crowd laughter behind, gala room tone",
+      "acting": "Before the first word her chin lifts and her eyes drop to him. On 'Oops' one corner of her red lip curls and her brows rise in fake innocence. On 'Tip's included' she tilts the empty flute toward him. After the last word she holds the small cruel closed-lip smile for a beat and lowers the glass. Delivery: light, sweet and sing-song on top, a cold flat drop on 'included', unhurried.",
+      "lens": 85,
+      "angle": "low"
+    },
+    {
+      "id": "C02X",
+      "pipeline": "i2v_25",
+      "seed_group": "S1",
+      "frames": 49,
+      "start_image": "chain:C02",
+      "continuation": true,
+      "cast": [
+        "VIVIAN"
+      ],
+      "shot": "close up, three-quarter",
+      "visual": "Continuation of the same shot: the platinum blonde woman in a silver sequined gown is silent, mouth closed, she holds her small cruel smile, lowers the empty flute and turns her head slightly toward the laughing guests. Locked off camera, framing stays exactly as in the first frame, no cut, no zoom, nobody else enters the frame.",
+      "light": "warm key from camera left, diamonds catching light, chandelier bokeh behind",
+      "sounds": "crowd laughter, gala room tone",
+      "out": "cut on her head turn into C03B"
+    },
+    {
+      "id": "C03B",
+      "pipeline": "i2v_25",
+      "seed_group": "S1",
+      "frames": 145,
+      "start_image": "images/E01-K20.png",
+      "cast": [
+        "COLE_VALET"
+      ],
+      "shot": "extreme close up",
+      "visual": "Extreme close up of the valet, champagne dripping from his hair down his face. He slowly lifts his eyes straight into the lens, completely calm. A single drop falls from his jaw. He breathes once, steady. Locked off camera.",
+      "light": "gold chandelier rim, wet highlights on real skin with visible pores",
+      "sounds": "the crowd fades to a muffled hum, a single drip, a low cello note begins",
+      "edit": "CARD-E01-HOOK.png overlay from 0.5 s",
+      "lens": 85,
+      "angle": "eye level"
+    },
+    {
+      "id": "T1",
+      "pipeline": "flf_25",
+      "seed_group": "S2",
+      "frames": 145,
+      "start_image": "chain:C03B",
+      "end_image": "images/E01-K04.png",
+      "continuation": true,
+      "cast": [],
+      "shot": "transition",
+      "visual": "Champagne droplets drift and rise across the frame, catching gold light, turning into falling gold confetti as the camera lifts up and away in one continuous move, revealing a glass skyscraper lobby party far below: a champagne tower, gold confetti, a giant glowing blank LED wall with no text.",
+      "light": "gold light catching every droplet, then warm amber party light",
+      "sounds": "a soft rising whoosh, the cello note swells, the roar of a party fades in, a confetti cannon pop, glasses clinking",
+      "out": "match transform, the time jump is carried by the move and the card",
+      "edit": "CARD-E01-3YEARS.png fades in at 1 s, CARD-E01-SCREEN.png overlaid on the blank LED wall in the edit"
+    },
+    {
+      "id": "C05",
+      "pipeline": "idlora_23",
+      "seed_group": "S2",
+      "frames": 97,
+      "start_image": "images/E01-K05.png",
+      "cast": [
+        "GRANT"
+      ],
+      "speaker": "GRANT",
+      "shot": "close up, three-quarter",
+      "line": "Brother. We did it.",
+      "visual": "Close up of a handsome golden blond man in a navy suit and open white shirt holding a champagne flute at a glamorous launch party in a glass lobby, three-quarter toward camera, gold confetti drifting, looking at his best friend just off camera.",
+      "light": "warm amber key, confetti catching light",
+      "sounds": "warm, charming, excited male voice, close to the mic, party cheering behind",
+      "acting": "Before the first word his eyes glisten and a disbelieving laugh catches in his chest. On 'Brother' his brows lift and he leans in. On 'We did it' his voice breaks into a breathy half laugh and he shakes his head slowly. After the last word he holds a proud grin and nods. Delivery: warm, low and close, thick with emotion, a catch of breath before 'did it'.",
+      "lens": 85,
+      "angle": "eye level"
+    },
+    {
+      "id": "C05X",
+      "pipeline": "i2v_25",
+      "seed_group": "S2",
+      "frames": 49,
+      "start_image": "chain:C05",
+      "continuation": true,
+      "cast": [
+        "GRANT"
+      ],
+      "shot": "close up, three-quarter",
+      "visual": "Continuation of the same shot: the golden blond man is silent, mouth closed, beaming with proud disbelief, he laughs softly and lifts his champagne flute toward his friend just off camera. Locked off camera, framing stays exactly as in the first frame, no cut, no zoom, nobody else enters the frame.",
+      "light": "warm amber key, confetti catching light",
+      "sounds": "party cheering, glasses clinking"
+    },
+    {
+      "id": "C06",
+      "pipeline": "idlora_23",
+      "seed_group": "S2",
+      "frames": 105,
+      "start_image": "images/E01-K06.png",
+      "cast": [
+        "COLE_FOUNDER"
+      ],
+      "speaker": "COLE_FOUNDER",
+      "shot": "9:16 medium close up, three-quarter",
+      "line": "We did. Where's Viv? She has to see this.",
+      "visual": "Medium close up, head to mid torso, of a handsome dark haired man in a navy blazer and open white shirt at a launch party, three-quarter toward camera, oval anamorphic bokeh of party lights, looking at his friend just off camera.",
+      "light": "warm key, oval anamorphic bokeh of party lights",
+      "sounds": "warm, smooth, playful baritone, party behind him",
+      "acting": "Before the first word a boyish grin pulls at one corner of his mouth. On 'We did' he nods once, warm. On 'Where's Viv' his eyes leave his friend and search the crowd over his shoulder. On 'She has to see this' the grin breaks wide but closed-lipped. After the last word he looks back at his friend, eyes bright. Delivery: smooth, happy, a little breathless, rising with excitement on 'see this'.",
+      "lens": 65,
+      "angle": "eye level"
+    },
+    {
+      "id": "C06X",
+      "pipeline": "i2v_25",
+      "seed_group": "S2",
+      "frames": 41,
+      "start_image": "chain:C06",
+      "continuation": true,
+      "cast": [
+        "COLE_FOUNDER"
+      ],
+      "shot": "close up, three-quarter",
+      "visual": "Continuation of the same shot: the dark haired man is silent, mouth closed, grinning to himself, he lifts a chilled champagne bottle with a blank plain gold foil neck from a passing silver tray, tucks two empty flutes between his fingers, then glances toward the elevators. Locked off camera, framing stays exactly as in the first frame, no cut, no zoom, nobody else enters the frame.",
+      "light": "warm key, oval anamorphic bokeh of party lights",
+      "sounds": "glass clink, bottle lifted off a tray, party behind him",
+      "out": "dissolve 12 f to the hotel lobby, the concierge room tone leads"
+    },
+    {
+      "id": "C08A",
+      "pipeline": "idlora_23",
+      "seed_group": "S3",
+      "frames": 105,
+      "start_image": "images/E01-K08.png",
+      "cast": [
+        "CONCIERGE",
+        "COLE_FOUNDER"
+      ],
+      "speaker": "CONCIERGE",
+      "shot": "9:16 medium close up, three-quarter",
+      "line": "Miss Draycourt went up to the penthouse suite.",
+      "visual": "Medium close up, head to mid torso, of a pretty concierge in a charcoal uniform behind a dark wood and brass desk in a quiet luxury hotel lobby, three-quarter toward camera, looking at a guest just off camera.",
+      "light": "warm brass lamp light, soft",
+      "sounds": "polite warm female voice, quiet luxury hotel lobby, a piano far away",
+      "acting": "Before the first word she gives a soft courteous smile. On 'Miss Draycourt' her head tilts slightly with a hint of knowing curiosity. On 'penthouse suite' her eyes glance upward toward the elevators. After the last word she holds the polite smile and gives a small nod. Delivery: warm, polite, professional, unhurried, quiet hotel volume.",
+      "lens": 65,
+      "angle": "eye level"
+    },
+    {
+      "id": "C08AX",
+      "pipeline": "i2v_25",
+      "seed_group": "S3",
+      "frames": 41,
+      "start_image": "chain:C08A",
+      "continuation": true,
+      "cast": [
+        "CONCIERGE"
+      ],
+      "shot": "close up, three-quarter",
+      "visual": "Continuation of the same shot: the concierge is silent, mouth closed, she keeps her polite knowing smile and glances once more toward the elevators, then back to the guest. Locked off camera, framing stays exactly as in the first frame, no cut, no zoom, nobody else enters the frame.",
+      "light": "warm brass lamp light, soft",
+      "sounds": "quiet luxury hotel lobby, a piano far away"
+    },
+    {
+      "id": "C08B",
+      "pipeline": "idlora_23",
+      "seed_group": "S3",
+      "frames": 97,
+      "start_image": "images/E01-K21.png",
+      "cast": [
+        "COLE_FOUNDER"
+      ],
+      "speaker": "COLE_FOUNDER",
+      "shot": "9:16 medium close up, three-quarter",
+      "line": "Perfect. Don't tell her I'm coming.",
+      "visual": "Medium close up, head to mid torso, of the handsome dark haired man in a navy blazer leaning on a brass and dark wood concierge desk, three-quarter toward camera, brass lamps as bokeh, looking at the concierge just off camera.",
+      "light": "warm lamp key, soft rim, brass lamps as bokeh",
+      "sounds": "smooth, playful, low baritone, the concierge laughs softly",
+      "acting": "Before the first word he leans in with a nervous excited half smile. On 'Perfect' his eyes light up. On 'Don't tell her' his voice drops and he glances around like a conspirator. After the last word he winks and raises one finger to his lips. Delivery: playful conspiratorial charm, low, lowered further on 'I'm coming'.",
+      "lens": 65,
+      "angle": "eye level"
+    },
+    {
+      "id": "C08BX",
+      "pipeline": "i2v_25",
+      "seed_group": "S3",
+      "frames": 49,
+      "start_image": "chain:C08B",
+      "continuation": true,
+      "cast": [
+        "COLE_FOUNDER"
+      ],
+      "shot": "close up, three-quarter",
+      "visual": "Continuation of the same shot: the dark haired man is silent, he lowers his finger from his lips with a playful grin, taps the counter twice and pushes off the desk toward the elevators off camera right. Locked off camera, framing stays exactly as in the first frame, no cut, no zoom, nobody else enters the frame.",
+      "light": "warm lamp key, soft rim, brass lamps as bokeh",
+      "sounds": "a knuckle tap on wood, an elevator ding",
+      "out": "cut on his turn, the elevator ding leads into C09"
+    },
+    {
+      "id": "C09",
+      "pipeline": "i2v_25",
+      "seed_group": "S3",
+      "frames": 121,
+      "start_image": "images/E01-K09.png",
+      "cast": [
+        "COLE_FOUNDER"
+      ],
+      "shot": "medium, symmetrical",
+      "visual": "The man stands inside a brass elevator holding a chilled champagne bottle and two empty flutes, smiling to himself, rocking gently on his heels, glancing down at the bottle, breathing out, eyes bright and excited. Near the end the two brass doors slide in and meet in the center.",
+      "light": "warm brass interior light, darker lobby in front",
+      "sounds": "elevator ding, doors sliding, soft hum",
+      "out": "dissolve 12 f on the closing doors to the corridor",
+      "lens": 35,
+      "angle": "eye level"
+    },
+    {
+      "id": "C10",
+      "pipeline": "idlora_23",
+      "seed_group": "S3",
+      "frames": 121,
+      "start_image": "images/E01-K10.png",
+      "cast": [
+        "COLE_FOUNDER"
+      ],
+      "speaker": "COLE_FOUNDER",
+      "shot": "9:16 medium close up, three-quarter",
+      "line": "Viv? We're public. Come celebrate.",
+      "visual": "Medium close up, head to mid torso, of the dark haired man in a navy blazer in a dim luxury hotel corridor with warm sconces, three-quarter toward camera, a chilled champagne bottle and two empty flutes held at his chest, looking toward a door just off camera.",
+      "light": "warm sconces in a rhythm down the walls",
+      "sounds": "a soft playful half whisper, the muffled hum of the building, soft carpet footsteps far off",
+      "acting": "Before the first word he takes a happy breath and leans toward the door. On 'Viv' his brows lift, playful. On 'We're public' a proud almost-smile flickers. On 'Come celebrate' he lifts the bottle a little. After the last word he waits, listening, the smile holding. Delivery: a soft playful half whisper, close to the mic, a surprise in his voice.",
+      "lens": 65,
+      "angle": "eye level"
+    },
+    {
+      "id": "C12",
+      "pipeline": "flf_25",
+      "seed_group": "S4",
+      "frames": 145,
+      "start_image": "images/E01-K12.png",
+      "end_image": "images/E01-K13.png",
+      "cast": [
+        "COLE_FOUNDER"
+      ],
+      "shot": "dolly zoom",
+      "visual": "Close on the man's hand on a brass door handle, his face above it, the champagne bottle tucked under his other arm, his smile fading as he listens. He pushes the door open and stops in the doorway. Dolly zoom: his face grows larger in frame while the corridor behind him stretches away.",
+      "light": "cold blue light from the room across his face, warm corridor behind",
+      "sounds": "muffled laughter through the door, a woman's laugh, the door opening, then the room tone drains to near silence, one low heartbeat",
+      "out": "cut on the heartbeat into C13",
+      "lens": 40,
+      "angle": "eye level"
+    },
+    {
+      "id": "C13",
+      "pipeline": "idlora_23",
+      "seed_group": "S4",
+      "frames": 97,
+      "start_image": "images/E01-K14.png",
+      "cast": [
+        "VIVIAN"
+      ],
+      "speaker": "VIVIAN",
+      "shot": "9:16 medium close up, three-quarter",
+      "line": "Cole.",
+      "visual": "Medium close up, head to mid torso, of a platinum blonde woman in a champagne silk robe sitting on the edge of a bed in a penthouse suite, a blond man in an open dress shirt soft and out of focus beside her, the Manhattan skyline in the windows, three-quarter toward camera, looking at the doorway just off camera.",
+      "light": "cold city light through the windows, one warm bedside lamp",
+      "sounds": "city far below, silk rustling, her voice cool and flat",
+      "acting": "Before the first word her chin lifts and she holds his gaze, caught but not sorry. On 'Cole' a flicker of contempt pulls one corner of her mouth. After the word she stays still, eyes locked on him, and pulls the robe closer. Delivery: cool, flat, quiet, no apology.",
+      "lens": 65,
+      "angle": "eye level"
+    },
+    {
+      "id": "C13X",
+      "pipeline": "i2v_25",
+      "seed_group": "S4",
+      "frames": 49,
+      "start_image": "chain:C13",
+      "continuation": true,
+      "cast": [
+        "VIVIAN"
+      ],
+      "shot": "close up, three-quarter",
+      "visual": "Continuation of the same shot: the platinum blonde woman is silent, mouth closed, she holds his gaze without blinking, her jaw sets, then she looks away toward the window. Locked off camera, framing stays exactly as in the first frame, no cut, no zoom, nobody else enters the frame.",
+      "light": "cold city light through the windows, one warm bedside lamp",
+      "sounds": "city far below, a slow breath"
+    },
+    {
+      "id": "C14",
+      "pipeline": "flf_25",
+      "seed_group": "S4",
+      "frames": 121,
+      "start_image": "images/E01-K15.png",
+      "end_image": "images/E01-K16.png",
+      "cast": [],
+      "shot": "low insert",
+      "visual": "Low angle near the carpet: a chilled champagne bottle with a plain gold foil neck slips from a man's fingers, thuds onto thick carpet and rolls on its side, champagne foaming and glugging out into the carpet toward his shoes. Natural speed.",
+      "light": "warm lamp glint on the wet glass, cold room light",
+      "sounds": "a dull thud on carpet, then fizzing and glugging as the bottle rolls",
+      "out": "cut on the last glug into C15",
+      "lens": 50,
+      "angle": "ground level"
+    },
+    {
+      "id": "C15",
+      "pipeline": "i2v_25",
+      "seed_group": "S4",
+      "frames": 169,
+      "start_image": "images/E01-K17.png",
+      "cast": [
+        "COLE_FOUNDER"
+      ],
+      "shot": "extreme close up",
+      "visual": "Extreme close up of the dark haired man's face. His jaw tightens. His eyes glass over. A tear gathers on his lower lid and he refuses to let it fall. He swallows. He does not look away. Locked off, then the faintest push in.",
+      "light": "cold blue window light, a thin warm edge from the corridor behind",
+      "sounds": "total silence except his breath, then a distant city siren and one low hit at the very end",
+      "out": "0.5 s dissolve to the tag on the low hit",
+      "lens": 85,
+      "angle": "eye level"
+    },
+    {
+      "id": "C16",
+      "pipeline": "flf_25",
+      "seed_group": "S5",
+      "frames": 121,
+      "start_image": "images/E01-K18.png",
+      "end_image": "images/E01-K19.png",
+      "cast": [],
+      "shot": "top down insert",
+      "visual": "Top down insert on a black marble desk: a black leather gloved hand signs a thick legal deed with a fountain pen, finishes the signature and lifts the pen. The deed's text is blurred and unreadable, no readable text anywhere.",
+      "light": "one warm brass desk lamp, deep shadow",
+      "sounds": "the scratch of a fountain pen, a clock ticking, one low piano note",
+      "out": "0.5 s dissolve to the end card (the director does it)",
+      "lens": 100,
+      "angle": "top down"
+    }
+  ]
+}
